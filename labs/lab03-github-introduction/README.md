@@ -60,14 +60,14 @@ Complete all of the following in your notes section.
 
 ## Checklist
 
-- [ ] Create at least three headers (Level 1, Level 2, Level 3)
-- [ ] Include one horizontal rule
-- [ ] Use bold text
-- [ ] Use italic text
-- [ ] Create a bullet list containing at least three items
-- [ ] Create a numbered list containing at least three items
-- [ ] Create a task list containing at least three tasks
-- [ ] Add a hyperlink with your GitHub profile
+- [x] Create at least three headers (Level 1, Level 2, Level 3)
+- [x] Include one horizontal rule
+- [x] Use bold text
+- [x] Use italic text
+- [x] Create a bullet list containing at least three items
+- [x] Create a numbered list containing at least three items
+- [x] Create a task list containing at least three tasks
+- [x] Add a hyperlink with your GitHub profile
 
 ## Instructions
 
@@ -84,5 +84,29 @@ Complete all of the following in your notes section.
 
 # Section 3: Student Notes
 
-Delete this line and write your notes here.
-
+---
+# **File Manipulation & GitHub**
+## What are Files and Folders
+- File - Piece of stored information, such as a document, picture, video, or program
+- Folder - Used to organize and store files
+- File extensions - Identifies the type of file
+1. .docx
+2. pdf
+3. html
+4. css
+---
+# Absolute Paths vs. Relative Paths
+### Absolute Path
+- Shows the complete location from the beginning of the drive
+- c:/users/student/documents/project/index.html
+### Relative Path
+- Shows a location based on your current folder
+project/index.html
+---
+# Learning Tasks
+- [x] Learn to extract files
+- [x] Learn Github language
+- [x] Setup tools to be successful in this class
+---
+### *GitHub Hyperlink*
+[GitHub Profile](https://github.com/Brush-Grayson)
