@@ -18,16 +18,16 @@
             <div class="rules">
 
                 If doISayHello is true<br>
-                &nbsp;&nbsp;&nbsp;&nbsp;Say "Hello, World!"<br><br>
+                &nbsp;&nbsp;&nbsp;&nbsp;Say "Hello, World I am hungry!"<br><br>
 
                 Otherwise, if doISayGoodbye is true<br>
-                &nbsp;&nbsp;&nbsp;&nbsp;Say "Goodbye, World!"<br><br>
+                &nbsp;&nbsp;&nbsp;&nbsp;Say "Goodbye, World I am still hungry!"<br><br>
 
                 Otherwise<br>
-                &nbsp;&nbsp;&nbsp;&nbsp;Say "Why am I even out here? It's cold."<br><br>
+                &nbsp;&nbsp;&nbsp;&nbsp;Say "who has pizza? Or Chicken tenders?"<br><br>
 
                 Always<br>
-                &nbsp;&nbsp;&nbsp;&nbsp;Say something so the world knows you are going inside now.
+                &nbsp;&nbsp;&nbsp;&nbsp;Say Please god get me some pizza or chicken tenders.
 
             </div>
 
@@ -35,19 +35,19 @@
 
         <div class="container">
 
-            <h1>Decision Making Program</h1>
+            <h1>Grayson Brush's Food Deciding Program</h1>
 
             <p>
                 Change the boolean variables below and then run the program.
                 The values of these variables determine what message is displayed.
             </p>
 
-            <h2>Program Variables</h2>
+            <h2>Hunger Variables</h2>
 
             <p>
-                I walk outside of my home. It's a beautiful fall day in La Crosse, Wisconsin.
+                I walk outside of my home and I know what I want to eat.
                 <br>
-                The sun is shining. The air smells like apples and crisp autumn leaves.
+                The air smells like pizza and crispy chicken tenders and I am absolutely starving.
             </p>
 
             <div class="variable-container">
@@ -57,7 +57,7 @@
                     <h3>Hello Option</h3>
 
                     <p>
-                        Should I say "Hello, World!"?
+                        Should I say "Hello, World I am Hungry and I am getting chicken tenders!"?
                     </p>
 
                     <label for="helloInput">
@@ -76,7 +76,7 @@
                     <h3>Goodbye Option</h3>
 
                     <p>
-                        Should I say "Goodbye, World!"?
+                        Should I say "Goodbye, World I am going to get pizza!"?
                     </p>
 
                     <label for="goodbyeInput">
@@ -92,12 +92,12 @@
 
             </div>
 
-            <button onclick="runProgram()">Run Program</button>
+            <button onclick="runProgram()">Launch the food rocketship to the moon</button>
 
-            <h2>Program Output</h2>
+            <h2>Hunger Output</h2>
 
             <div id="output">
-                The program output will appear here.
+                Hopefully the chicken tenders or pizza appear here.
             </div>
 
         </div>
@@ -145,7 +145,13 @@
                 doISayHello = true
                 doISayGoodbye = true
              
-                Observation:
+                Observation: Hello, world!
+                ...
+                ...
+                I am tired of being outside. I am going inside now.
+
+                This function worked as I expected because the doIsayHello is set to true.
+                Even with doIsayGoodbye being set to true, the code accepted the first if statement and ended there.
             
                 ***********************************************************************
                 
@@ -153,7 +159,13 @@
                 doISayHello = false
                 doISayGoodbye = false
              
-                Observation:
+                Observation:Why am I even out here? It's cold.
+                ...
+                ...
+                I am tired of being outside. I am going inside now.
+
+                We got this output because "if" and "else if" are both false, so the code made it to the last "else" statement.
+                The last "else" statement gives us the output of "Why am I even out here? It's cold." This worked as inteneded.
             
                 ***********************************************************************
 
@@ -161,7 +173,11 @@
                 doISayHello = true
                 doISayGoodbye = false
              
-                Observation:
+                Observation: Hello, world!
+                
+                This observation is very similar to Test #1.
+                The output is the same because the first "if" statement is true, so the code does not check the "else if" statement.
+                Which is false anyways.
 
                 ***********************************************************************    
 
@@ -169,7 +185,12 @@
                 doISayHello = false
                 doISayGoodbye = true
              
-                Observation:
+                Observation: Goodbye, world!
+
+                This also worked as intended. After watching the lecture and reading through this code, if the hello is false
+                and the goodbye is true, it will always produce "Goodbye, world!". Looks like the code is written correctly since
+                every input combonation provided the correct output.
+
                 
             */
     
@@ -180,22 +201,22 @@
             if(doISayHello == true) {
 
                 // Assign a greeting message.
-                message = "Hello, World!";
+                message = "Hello, World I am Hungry and I am getting chicken tenders!";
 
             } else if(doISayGoodbye == true) {
 
                 // Assign a goodbye message.
-                message = "Goodbye, World!";
+                message = "Goodbye, World I am going to get pizza!";
 
             } else {
 
                 // Assign a default message.
-                message = "Why am I even out here? It's cold.";
+                message = "Who has pizza? Or chicken tenders?";
 
             }
 
             // Assign a message that always displays.
-            finalMessage = "I am tired of being outside. I am going inside now.";
+            finalMessage = "Please god get me some pizza or chicken tenders.";
 
             displayMessages(message, finalMessage);
 
